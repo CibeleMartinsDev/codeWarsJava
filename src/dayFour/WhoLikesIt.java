@@ -15,7 +15,6 @@ public class WhoLikesIt {
 
     public static String whoLikesIt(String... names) {
         String text = "no one likes this";
-
         if(names.length != 0){
             if(names.length >= 4){
                 int others = names.length - 2;

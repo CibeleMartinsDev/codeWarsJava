@@ -1,3 +1,4 @@
+import dayFive.SortTheOdd;
 import dayFour.WhoLikesIt;
 import dayOne.contagemBits.detectarPangram.Exercicio;
 import dayThree.SplitStrings;
@@ -19,12 +20,15 @@ public class Main {
 //        System.out.println(Arrays.toString(SplitStrings.solution("abcdef")));
 //        SplitStrings.solution("abcdef");
 //        SplitStrings.solution("abc");
-        String noNames[] = new String[0];
-        String twoNames[] = {"Alex", "Jacob"};
-        String threeNames[] = {"Alex", "Jacob", "Mark"};
-        String fourNames[] = {"Alex", "Jacob", "Mark", "Max"};
+//        String noNames[] = new String[0];
+//        String twoNames[] = {"Alex", "Jacob"};
+//        String threeNames[] = {"Alex", "Jacob", "Mark"};
+//        String fourNames[] = {"Alex", "Jacob", "Mark", "Max"};
 
 //        System.out.println(WhoLikesIt.whoLikesIt(noNames));
-        System.out.println(WhoLikesIt.whoLikesIt(twoNames));
+//        System.out.println(WhoLikesIt.whoLikesIt(twoNames));
+        int[] test1 = {5, 8, 6, 3, 4};
+        System.out.println(Arrays.toString(SortTheOdd.sortArray(test1)));
+
     }
 }
