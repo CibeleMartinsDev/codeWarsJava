@@ -1,9 +1,8 @@
 package dayFive;
 
-import java.lang.reflect.Array;
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,25 +19,22 @@ public class SortTheOdd {
 
 
     public static int[] sortArray(int[] array) {
-        int[] tempOddNumbersArray = new int[array.length];
+        ArrayList<Integer> tempOddNumbersArray = new ArrayList<>();
         for(int i = 0; i < array.length; i++){
             if(array[i] % 2 != 0){
-                tempOddNumbersArray[i] = array[i];
+                tempOddNumbersArray.add(array[i]);
                 array[i] = 0;
             }
         }
+        List<Integer> listOddNumberOrdered =  tempOddNumbersArray.stream().sorted().toList();
 
-        Arrays.sort(tempOddNumbersArray);
-
-        for(int i = 0; i < array.length; i++){
-            if(array[i] == 0 && ){
-                array[i] = tempOddNumbersArray[i];
-                System.out.println(tempOddNumbersArray[i]);
-            }
+        for (Integer integer : listOddNumberOrdered) {
+            List<Integer> list = Arrays.stream(array).boxed().collect(Collectors.toList());
+            int indexZero = list.indexOf(0);
+            array[indexZero] = integer;
         }
 
-
-        return tempOddNumbersArray;
+        return array;
 
     }
 }

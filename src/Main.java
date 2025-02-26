@@ -28,7 +28,9 @@ public class Main {
 //        System.out.println(WhoLikesIt.whoLikesIt(noNames));
 //        System.out.println(WhoLikesIt.whoLikesIt(twoNames));
         int[] test1 = {5, 8, 6, 3, 4};
-        System.out.println(Arrays.toString(SortTheOdd.sortArray(test1)));
+       Arrays.toString(SortTheOdd.sortArray(test1));
+
+
 
     }
 }
