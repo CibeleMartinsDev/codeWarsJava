@@ -1,11 +1,6 @@
-import dayFive.SortTheOdd;
-import dayFour.WhoLikesIt;
-import dayOne.contagemBits.detectarPangram.Exercicio;
-import dayThree.SplitStrings;
-import dayTwo.CoutingSheep;
-import dayTwo.EvenOrOdd;
+import dayFiveSix.SortTheOdd;
+import daySeven.BreakCamelCase;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -29,8 +24,10 @@ public class Main {
 //        System.out.println(WhoLikesIt.whoLikesIt(twoNames));
         int[] test1 = {5, 8, 6, 3, 4};
         int [] test2 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-       Arrays.toString(SortTheOdd.sortArray(test1));
-        System.out.println(  Arrays.toString(SortTheOdd.sortArray(test2)));
+        int [] test3 = {73, 99, 53, 18, 44, 10, 90, 43, 26, 26, 0, 10, 92, 25, 34, 66, 56, 22, 27, 62, 81};
+//       Arrays.toString(SortTheOdd.sortArray(test1));
+//        System.out.println(  Arrays.toString(SortTheOdd.sortArray(test3)));
+        System.out.println( BreakCamelCase.camelCase("camelCasingTest"));
 
 
 
