@@ -1,6 +1,4 @@
-package daySeven;
-
-import java.util.ArrayList;
+package daySevenEight;
 
 
 /**
@@ -16,16 +14,14 @@ public class BreakCamelCase {
 
        public static String camelCase(String input) {
            String[] stringArray = input.split("");
-           ArrayList<String> finalArray = new ArrayList<>();
 
            for (int i = 0; i < stringArray.length; i++){
-                     finalArray.add(stringArray[i]);
-                     if(Character.isUpperCase(input.charAt(i))){
-                     finalArray.add(i, " ");
-                 }
+               if(Character.isUpperCase(input.charAt(i))){
+                   stringArray[i] = " " + stringArray[i];
+               }
            }
 
-           return String.join("", finalArray);
+           return String.join("", stringArray);
        }
 
 }
